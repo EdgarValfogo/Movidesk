@@ -5,8 +5,8 @@ namespace Movidesk
 {
     public class MovideskConnector
     {
-        private string ApiAccessToken = "SEUTOKENAQUI";
-        private string ApiBaseUrl = "http://movidesk.localhost/public/v1";
+        private string ApiAccessToken = "SEUTOKEN";
+        private string ApiBaseUrl = "https://api.movidesk.com/public/v1";
 
         private string ApiUrl(string _type) { return ApiBaseUrl + "/" + _type; }
 
