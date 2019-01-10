@@ -9,6 +9,8 @@ namespace Movidesk.Model
         public int Id { get; set; }
         public int Type { get; set; }
         public int Origin { get; set; }
-        public PersonModel CreatedBy { get; set; }
+        public string Description { get; set; }
+        public string HtmlDescription { get; set; }
+        public PersonModel CreatedBy = new PersonModel();
     }
 }

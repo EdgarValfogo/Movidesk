@@ -16,16 +16,16 @@ namespace Movidesk.Business.Tickets
         public int ParentServiceId { get; set; }
         public int ServiceForTicketType { get; set; }
         public int Origin = 9; // Origin for Web API value
-        public List<string> ServiceFull { get; set; }
+        public List<string> ServiceFull = new List<string>();
         public int ServiceFirstLevelId { get; set; }
         public string ServiceFirstLevel { get; set; }
         public string ServiceSecondLevel { get; set; }
         public string ServiceThirdLevel { get; set; }
         public string OwnerTeam { get; set; }
-        public PersonModel CreatedBy { get; set; }
-        public List<string> Tags { get; set; }
+        public PersonModel CreatedBy = new PersonModel();
+        public List<string> Tags = new List<string>();
         public int ActionCount { get; set; }
         public List<ActionModel> Actions = new List<ActionModel>();
-
+        public List<PersonModel> Clients = new List<PersonModel>();
     }
 }
