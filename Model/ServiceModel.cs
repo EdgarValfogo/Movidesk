@@ -6,10 +6,10 @@ namespace Movidesk.Model
 {
     public class ServiceModel
     {
-        public int Id { get; set; }
+        public Nullable<int> Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int ParentServiceId { get; set; }
+        public Nullable<int> ParentServiceId { get; set; }
         public IEnumerable<ServiceForTicketTypeEnum> ServiceForTicketType { get; set; }
         public IEnumerable<IsVisibleEnum> IsVisible { get; set; }
         public IEnumerable<AllowSelectionEnum> AllowSelection { get; set; }

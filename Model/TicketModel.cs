@@ -7,25 +7,31 @@ namespace Movidesk.Business.Tickets
 {
     public class TicketModel
     {
-        public int Id { get; set; }
+        public Nullable<int> Id { get; set; }
         public string Name { get; set; }
         public string Subject { get; set; }
-        public int Type { get; set; }
+        public string Category { get; set; }
+        public string Status { get; set; }
+        public Nullable<DateTime> CreatedDate { get; set; }
+        public string Justification { get; set; }
+        public Nullable<int> Type { get; set; }
         public string Urgency { get; set; }
-        public int IsVisible { get; set; }
-        public int ParentServiceId { get; set; }
-        public int ServiceForTicketType { get; set; }
-        public int Origin = 9; // Origin for Web API value
-        public List<string> ServiceFull = new List<string>();
-        public int ServiceFirstLevelId { get; set; }
+        public Nullable<int> IsVisible { get; set; }
+        public Nullable<int> ParentServiceId { get; set; }
+        public Nullable<int> ServiceForTicketType { get; set; }
+        public Nullable<int> Origin = 9; // Origin for Web API value
+        public List<string> ServiceFull { get; set; }
+        public Nullable<int> ServiceFirstLevelId { get; set; }
         public string ServiceFirstLevel { get; set; }
         public string ServiceSecondLevel { get; set; }
         public string ServiceThirdLevel { get; set; }
         public string OwnerTeam { get; set; }
-        public PersonModel CreatedBy = new PersonModel();
-        public List<string> Tags = new List<string>();
-        public int ActionCount { get; set; }
-        public List<ActionModel> Actions = new List<ActionModel>();
-        public List<PersonModel> Clients = new List<PersonModel>();
+        public PersonModel CreatedBy { get; set; }
+        public PersonModel Owner { get; set; }
+        public List<string> Tags { get; set; }
+        public Nullable<int> ActionCount { get; set; }
+        public List<ActionModel> Actions { get; set; }
+        public List<PersonModel> Clients { get; set; }
+        public List<CustomFieldValuesModel> CustomFieldValues { get; set; }
     }
 }

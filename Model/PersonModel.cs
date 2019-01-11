@@ -6,8 +6,8 @@ namespace Movidesk.Model
 {
     public class PersonModel
     {
-        public int Id { get; set; }
-        public int PersonType { get; set; }
+        public Nullable<int> Id { get; set; }
+        public Nullable<int> PersonType { get; set; }
         public string BusinessName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
